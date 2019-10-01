@@ -1,0 +1,9 @@
+node_modules
+target
+bin
+log
+output
+.log
+.classpath
+.project
+.vscode
