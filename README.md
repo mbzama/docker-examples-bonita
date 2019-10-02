@@ -1,2 +1,38 @@
-# docker-examples-bonita
-Hands-on lab exercises for Bonita apps
+## HR App
+
+# Components
+ - hr-web: Web UI to user management
+ - hr-rest: APIs to add/update/delete users from Bonita 
+ - bonita-engine: Create/Manage cases/tasks
+ - postgres: Used by bonita engine to store process definitions, metadata, business objects, user data etc.,
+ - mongodb: To store transaction history
+![alt text](https://github.com/mbzama/docker-examples-bonita/blob/master/2_hr-app/hr-app.png)
+
+# Technical Stack
+ - Spring mvc
+ - Angular 1
+ - Hibernate
+ - Postgres
+ - MAVEN
+ - Java 8
+ - Bonita Engine 7.9.2
+ 
+ # Instructions to run the POC:
+ 1. Check out as zip or clone the [repo](https://github.com/mbzama/docker-examples-bonita) 
+ 
+ 2. Navigate to 2_hr-app folder:
+    `cd 2_hr-app`
+
+ 3. Run this shell script to pull, build and run the docker container:
+    `./build.sh`
+
+ 4. Make sure all these containers are running:
+    `docker ps`
+    ![alt text](https://github.com/mbzama/docker-examples-bonita/blob/master/verify_containers.png)
+
+ 5. Bonita setup: All the related files are in [artifacts](https://github.com/mbzama/docker-examples-bonita/tree/master/artifacts) folder. Please find the detailed instructions [here]() 
+    - Install organisation and add walter.bates user to Administrator/User profiles
+    - Install BDM
+    - Install Bar file
+    - Activate the process
+
