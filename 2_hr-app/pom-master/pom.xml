@@ -12,7 +12,6 @@
 		<springframework.version>4.1.7.RELEASE</springframework.version>
 		<jackson.version>2.5.3</jackson.version>
 		<hibernate.version>4.3.6.Final</hibernate.version>
-		<mysql.version>5.1.31</mysql.version>
 		<joda-time.version>2.3</joda-time.version>
 		<log4j.version>1.2.17</log4j.version>
 		<junit.version>4.11</junit.version>
@@ -86,12 +85,6 @@
 				<groupId>org.hibernate</groupId>
 				<artifactId>hibernate-core</artifactId>
 				<version>${hibernate.version}</version>
-			</dependency>
-
-			<dependency>
-				<groupId>mysql</groupId>
-				<artifactId>mysql-connector-java</artifactId>
-				<version>${mysql.version}</version>
 			</dependency>
 
 			<dependency>

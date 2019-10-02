@@ -1,6 +1,10 @@
+java -version
+javac -version
+
 cd pom-master
 mvn clean install
 
+cd ..
 cd hr-rest
 mvn clean compile package
 
