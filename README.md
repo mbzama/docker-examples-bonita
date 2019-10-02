@@ -54,3 +54,8 @@
          
          --> **Admin / User:** walter.bates / bpm
          
+
+
+# Upload image to public docker registry (dockerhub)
+   Please refer to [this](https://github.com/mbzama/docker-training/blob/master/README.md#upload-image-to-public-registry-dockerhub)
+
