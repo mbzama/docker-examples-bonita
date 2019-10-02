@@ -1,0 +1,216 @@
+{
+	"info": {
+		"_postman_id": "bac68e05-e01c-4403-ab6e-287389a3f739",
+		"name": "docker-training-bpm",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Instantiate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "JSESSIONID",
+						"value": "83621B8BC6743899F48DCD5756581060",
+						"type": "text"
+					},
+					{
+						"key": "X-Bonita-API-Token",
+						"value": "f6b49aae-9d7d-4807-b725-42a5503f5401",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"registation_refInput\":{\n\t\"userName\": \"Emp2\",\n\t\"city\" : \"Hyd\",\n\t\"email\": \"emp2@gmail.com\"\n}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/bonita/API/bpm/process/4641365271016711043/instantiation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bonita",
+						"API",
+						"bpm",
+						"process",
+						"4641365271016711043",
+						"instantiation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "walter.bates",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "bpm",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/bonita/loginservice?",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bonita",
+						"loginservice"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "walter.bates",
+							"disabled": true
+						},
+						{
+							"key": "redirect",
+							"value": "false",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "bpm",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hr-rest - create user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"test\",\n\t\"address\" : \"hyderabad\",\n\t\"email\": \"test@test.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8181/hr-rest/hrrest/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"hr-rest",
+						"hrrest",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Process Details",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bonita/API/bpm/process?p=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bonita",
+						"API",
+						"bpm",
+						"process"
+					],
+					"query": [
+						{
+							"key": "p",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8181/hr-rest/hrrest/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"hr-rest",
+						"hrrest",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
