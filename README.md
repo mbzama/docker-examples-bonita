@@ -28,7 +28,7 @@
     `docker ps`
     ![alt text](https://github.com/mbzama/docker-examples-bonita/blob/master/verify_containers.png)
 
- 5. Bonita setup: All the related files are in [artifacts](https://github.com/mbzama/docker-examples-bonita/tree/master/artifacts) folder. Please find the detailed instructions [here]() 
+ 5. Bonita setup: All the related files are in [artifacts](https://github.com/mbzama/docker-examples-bonita/tree/master/artifacts) folder. Please find the detailed instructions [here](https://github.com/mbzama/docker-examples-bonita/blob/master/1_bonita/Bonita_Setup.docx) 
     - Install organisation and add walter.bates user to Administrator/User profiles
     - Install BDM
     - Install Bar file
