@@ -9,7 +9,7 @@
 	<description>Master Configuration for EVOOPS POCs</description>
 
 	<properties>
-		<springframework.version>4.1.7.RELEASE</springframework.version>
+		<springframework.version>5.2.7.RELEASE</springframework.version>
 		<jackson.version>2.5.3</jackson.version>
 		<hibernate.version>4.3.6.Final</hibernate.version>
 		<joda-time.version>2.3</joda-time.version>
