@@ -6,7 +6,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.Properties;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
@@ -32,7 +33,7 @@ import com.mongodb.MongoClient;
 
 @Repository("userDao")
 public class UserDaoImpl extends AbstractDao implements UserDao{
-	private static final Logger logger = Logger.getLogger(UserDaoImpl.class);
+	private static final Logger logger = LogManager.getLogger(UserDaoImpl.class);
 	
 	public boolean saveTransaction(Transaction transaction){
 		try {

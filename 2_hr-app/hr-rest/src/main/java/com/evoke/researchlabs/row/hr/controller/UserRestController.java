@@ -4,7 +4,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -28,7 +29,7 @@ import com.evoke.researchlabs.row.hr.util.BonitaUtil;
 public class UserRestController {
 	@Autowired
 	private UserService userService; 
-	private Logger logger = Logger.getLogger(UserRestController.class);
+	private static final Logger logger = LogManager.getLogger(UserRestController.class);
 	
 	@RequestMapping(value = "/welcome" , method = RequestMethod.GET,headers="Accept=application/json")
 	public String ping() {

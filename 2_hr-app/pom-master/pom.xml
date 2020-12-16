@@ -14,7 +14,7 @@
 		<jackson.version>2.5.3</jackson.version>
 		<hibernate.version>4.3.6.Final</hibernate.version>
 		<joda-time.version>2.3</joda-time.version>
-		<log4j.version>2.9.10.4</log4j.version>
+		<log4j.version>2.14.0</log4j.version>
 		<junit.version>4.11</junit.version>
 		<jackson.library>2.7.5</jackson.library>
 		<usertype.core.version>3.0.0.CR1</usertype.core.version>
@@ -98,12 +98,12 @@
 				<groupId>org.jadira.usertype</groupId>
 				<artifactId>usertype.core</artifactId>
 				<version>${usertype.core.version}</version>
-			</dependency>
-
+			</dependency>						    
+			
 			<dependency>
-				<groupId>log4j</groupId>
-				<artifactId>log4j</artifactId>
-				<version>${log4j.version}</version>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-core</artifactId>
+			   	<version>${log4j.version}</version>
 			</dependency>
 
 			<dependency>

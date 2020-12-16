@@ -7,3 +7,7 @@ output
 .classpath
 .project
 .vscode
+
+.settings
+*/.settings
+*/*/.settings

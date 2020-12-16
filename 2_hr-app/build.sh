@@ -13,6 +13,6 @@ cd hr-web
 mvn clean compile package
 
 cd ..
-docker-compose up -d --build
+#docker-compose up -d --build
 
-docker ps
+#docker ps

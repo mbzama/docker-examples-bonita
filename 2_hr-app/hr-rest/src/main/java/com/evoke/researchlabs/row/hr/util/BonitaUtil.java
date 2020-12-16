@@ -5,7 +5,8 @@ import java.util.Date;
 import java.util.List;
 
 import org.apache.http.client.ClientProtocolException;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.http.HttpEntity;
@@ -22,7 +23,7 @@ import com.evoke.researchlabs.row.hr.domain.User;
  *
  */
 public class BonitaUtil {
-	private static Logger logger = Logger.getLogger(BonitaUtil.class);
+	private static final Logger logger = LogManager.getLogger(BonitaUtil.class);
 	public static final String SERVER_URI = "http://bonita:8080/bonita";
 	public static final String BPM_USER = "walter.bates"; 
 	public static final String BPM_PWD = "bpm"; 
